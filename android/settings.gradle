@@ -1,0 +1,18 @@
+rootProject.name = 'Video'
+
+include ':realm'
+project(':realm').projectDir = new File(rootProject.projectDir, '../node_modules/realm/android')
+
+include ':react-native-firebase'
+project(':react-native-firebase').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-firebase/android')
+
+include ':react-native-file-opener-fix'
+project(':react-native-file-opener-fix').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-file-opener-fix/android')
+
+include ':react-native-fetch-blob'
+project(':react-native-fetch-blob').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fetch-blob/android')
+
+include ':react-native-admob'
+project(':react-native-admob').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-admob/android')
+
+include ':app'

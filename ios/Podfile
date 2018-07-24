@@ -1,0 +1,64 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Video' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Video
+
+ 
+
+  pod 'react-native-fetch-blob', :path => '../node_modules/react-native-fetch-blob'
+  pod 'Google-Mobile-Ads-SDK'
+  pod 'React', path: '../node_modules/react-native'
+  pod 'yoga', path: '../node_modules/react-native/ReactCommon/yoga'
+  pod 'React/RCTNetwork', :path => '../node_modules/react-native'
+  
+  pod 'React', path: '../node_modules/react-native', :subspecs => [
+  'CxxBridge',
+  'Core',
+  'ART',
+  'RCTActionSheet',
+  'RCTAnimation',
+  'RCTCameraRoll',
+  'RCTGeolocation',
+  'RCTImage',
+  'RCTNetwork',
+  'RCTText',
+  'RCTVibration',
+  'RCTWebSocket',
+  'DevSupport',
+  ]
+#  pod 'RNFirebase', :path => '../node_modules/react-native-firebase'
+    pod 'Firebase/Core'
+    #  pod 'Firebase/AdMob'
+#  pod 'Firebase/Analytics'
+
+  target 'VideoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'Video-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Video-tvOS
+
+  target 'Video-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if target.name == "React"
+            target.remove_from_project
+        end
+    end
+end

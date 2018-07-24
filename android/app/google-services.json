@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1059831456779",
+    "firebase_url": "https://video-downlaoder-9fae2.firebaseio.com",
+    "project_id": "video-downlaoder-9fae2",
+    "storage_bucket": "video-downlaoder-9fae2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059831456779:android:fd3768e98cb54596",
+        "android_client_info": {
+          "package_name": "com.octal360.video.downloader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059831456779-fj2jl2s396hqjhsc8q5poh2uluk8t7p5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHj5JL5bL9CRZ499n4Uy7TbzbFmO1B1YY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
